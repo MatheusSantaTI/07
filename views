@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Receitas</title>
+</head>
+<body>
+  <h1>Lista de Receitas</h1>
+  <ul>
+    <% receitas.forEach(receita => { %>
+      <li>
+        <h2><%= receita.nome %></h2>
+        <strong>Ingredientes:</strong> <p><%= receita.ingredientes %></p>
+        <strong>Modo de Preparo:</strong> <p><%= receita.modo_preparo %></p>
+      </li>
+    <% }) %>
+  </ul>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Receitas</title>
+</head>
+<body>
+  <h1>Receitas Culinárias</h1>
+
+  <% receitas.forEach((receita) => { %>
+    <div style="border:1px solid #ccc; margin-bottom:20px; padding:10px;">
+      <h2><%= receita.nome %></h2>
+      <p><strong>Ingredientes:</strong> <%= receita.ingredientes %></p>
+      <p><strong>Modo de Preparo:</strong> <%= receita.modo_preparo %></p>
+    </div>
+  <% }); %>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="pt-br">     

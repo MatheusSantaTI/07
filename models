@@ -1,0 +1,20 @@
+const receitas = [
+  {
+    id: 1,
+    nome: 'Bolo de Chocolate',
+    ingredientes: 'Farinha, açúcar, chocolate, ovos, fermento',
+    modo_preparo: 'Misture tudo e asse por 40 minutos.'
+  },
+  {
+    id: 2,
+    nome: 'Macarrão com Queijo',
+    ingredientes: 'Macarrão, queijo, leite, manteiga',
+    modo_preparo: 'Cozinhe o macarrão, faça o molho e misture.'
+  }
+];
+
+const getTodas = () => receitas;
+
+module.exports = { getTodas };
+// models/receitaModel.js
+// Este arquivo define o modelo de dados para as receitas. Ele contém uma lista de receitas e   

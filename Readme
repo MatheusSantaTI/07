@@ -1,0 +1,9 @@
+receitas-mvc/
+├── controllers/
+│   └── receitaController.js
+├── models/
+│   └── receitaModel.js
+├── views/
+│   └── receitas.ejs
+├── app.js
+├── package.json

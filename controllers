@@ -1,0 +1,10 @@
+const receitaModel = require('../models/receitaModel');
+
+function listarReceitas(req, res) {
+  const receitas = receitaModel.getReceitas();
+  res.render('receitas', { receitas });
+}
+
+module.exports = { listarReceitas };
+// controllers/receitaController.js
+// Este arquivo define o controlador para gerenciar as receitas.    
